@@ -1,3 +1,5 @@
+import "dart:math";
+
 void main() {
   print('hello world');
 
@@ -16,7 +18,7 @@ void main() {
   bool isRegisteredUser = true;
 
   print("${fName} is ${age} years old with ${gpa} gpa"); //* Bruno is 30 years old with 3.5 gpa
-
+  print(isRegisteredUser);
 
   String brand = "google";
 
@@ -34,4 +36,9 @@ void main() {
   print(price-0.77);
   print(10%3); //* 1
 
+  //? untuk operasi math, import package di atas atau akan error method not found
+  print(max(100,500)); //* 500
+
+  
+  
 }
