@@ -21,12 +21,12 @@ void main() {
   /////
   
   //! masih error
-  // stdout.write("Jumlah perulangan: ");
-  // int n = int.parse(stdin.readLineSync());
+  stdout.write("Jumlah perulangan: ");
+  int n = int.parse(stdin.readLineSync()!);
 
-  // for(int i = 1; i <= n; i++){
-  //   print("Perulangan ke-$i");
-  // }
+  for(int i = 1; i <= n; i++){
+    print("Perulangan ke-$i");
+  }
   
   /*
   int i = 0;
@@ -46,32 +46,32 @@ void main() {
 
 // fungsi main
 
-  var dian = new Person();
-  dian.setName("Dian");
-  dian.setAddress("Lombok");
+  // var dian = new Person();
+  // dian.setName("Dian");
+  // dian.setAddress("Lombok");
 
-  print("Nama: ${dian.getName()}");
-  print("Alamat: ${dian.getAddress()}");
+  // print("Nama: ${dian.getName()}");
+  // print("Alamat: ${dian.getAddress()}");
 
 }
 
-class Person{
-  Person String name;
-  var _address;
+// class Person{
+//   Person String name;
+//   var _address;
 
-  Person String getName(){
-    return this.name;
-  }
+//   Person String getName(){
+//     return this.name;
+//   }
 
-  void setName(String name){
-    this.name = name;
-  }
+//   void setName(String name){
+//     this.name = name;
+//   }
 
-  String getAddress(){
-    return this._address;
-  }
+//   String getAddress(){
+//     return this._address;
+//   }
 
-  void setAddress(String address){
-    this._address = address;
-  }
-}
+//   void setAddress(String address){
+//     this._address = address;
+//   }
+// }
