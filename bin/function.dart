@@ -19,7 +19,9 @@ void namaFungsi() {
 
 
 int luasPersegi(int sisi){
+
   return sisi * sisi;
+  
 }
 
 main(){
