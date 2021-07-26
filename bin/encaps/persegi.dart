@@ -33,5 +33,5 @@ class PersegiPanjang{
     return _panjang !* _lebar; 
   }
 
-  //*versi
+  
 }
