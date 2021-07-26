@@ -38,7 +38,6 @@ main(List<String> arguments) {
 
   list.remove(30);//! kalau ada angka yg sama, yang keremove indeks paling pertama dari awal
 
-  list.removeWhere((element) => element % 2 != 0 );
 
   //* method list.contains
   //* untuk cek apakah ada element di list tertentu
@@ -55,9 +54,29 @@ main(List<String> arguments) {
   print(item);
 
   });
+  
+  print("=======");
 
-  //*method lain: clear, sort, insertAll
+  //!=========================================================
+  //*method lain: clear, sort, insertAll, every, isEmpty, isNotEmpty, toSet, map 
+  //!=========================================================
 
+  List<int> angkaTrial = [20,21,22,23,24,25];
+  List<String> resultMap = [];
 
+  angkaTrial.removeWhere((element) => element % 2 != 0 );//*method mengembalikan boolean true
+
+  if(angkaTrial.every((number) => number % 2 !=0)){ //*method mengembalikan boolean true
+    print("semua ganjil");
+  } else {
+    print("semua genap");
+  };
+  print("=======");
+
+  //!untuk map harus buat tampungan dulu karena hasilnya iterable, bukan list
+  resultMap = angkaTrial.map((n) => "angka " + n.toString()).toList();
+  resultMap.forEach((element) {
+    print(element);
+   });
 
 }
