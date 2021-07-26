@@ -7,8 +7,10 @@ main(List<String> arguments){
   PersegiPanjang kotak1, kotak2;
 
   kotak1 = new PersegiPanjang();//* new itu versi lengkap, "unecessary"
+  //*setup setter
   kotak1.setPanjang(-4);
-  kotak1.lebar = 5;
+  //*utak atik + - untuk tahu effect property getter
+  kotak1.lebar = -6;
 
   kotak2 = PersegiPanjang();
   kotak2.setPanjang(-3);
@@ -18,4 +20,11 @@ main(List<String> arguments){
   luasKotak2 = kotak2.hitungLuas();
 
   print(luasKotak1 + luasKotak2);
+
+  //*setup getter yang dienkapsulasi
+  // print(kotak1.getPanjang());
+
+  //* cara cek properti getter encapsulasi
+  print(kotak1.lebar);//* kalau hasil positif berarti sudah jalan getter nya
+
 }
