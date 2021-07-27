@@ -37,4 +37,7 @@ main(List<String> arguments) async {
   for(Monster m in monsterGang){
     print(m.move());
   }
+  print("=================");
+  print(m.eatHuman());
+  print("=================");
 }

@@ -1,8 +1,10 @@
 import 'monster.dart';
+import 'venomMon.dart';
 
-class Monssnake extends Monster{
+class Monssnake extends Monster implements VenomMon{
   //*method unique milik monster ini
-  String fly() => "I can fly";
+  @override
+  String venom() => "I can sting";
 
   @override
   String move(){
