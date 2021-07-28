@@ -1,7 +1,9 @@
+import 'mixin.dart';
 import 'monssnake.dart';
 import 'venomMon.dart';
 
-class HybridMon extends Monssnake implements VenomMon  {
+//*penempatan mixin sebelum implements
+class HybridMon extends Monssnake with UniqueSkill implements VenomMon  {
   @override
   String venom(){
     return "Sting from Venommon!!";
