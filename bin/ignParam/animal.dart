@@ -1,7 +1,10 @@
 class Animal {
   String name;
+  
 
   Function(String name) habits;
+
+  
 
   Animal(this.name, {required this.habits});
 
