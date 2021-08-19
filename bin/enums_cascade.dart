@@ -1,5 +1,7 @@
 void main(List<String> arguments){
-  UglyMonster um = UglyMonster(status: UglymonState.standby)
+  UglyMonster um = UglyMonster(status: UglymonState.standby);
+  print("Pengaplikasian cascade");
+  um
   ..move()
   ..talk();
 }
