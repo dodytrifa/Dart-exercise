@@ -1,4 +1,3 @@
-
 class Man {
   final String role;
   final int age;
@@ -16,24 +15,20 @@ void main(List<String> arguments) {
     Man('IT', 18),
     Man('Admin', 22)
   ];
-  
+
   //*sort data integer
   // men.sort((m1,m2)=> m1.age -m2.age);
 
   //*sort data string
   // men.sort((m1,m2)=> m1.role.compareTo(m2.role));
-  
 
-  men.sort((m1,m2){
-    if(m1.role.compareTo(m2.role) != 0){
+  men.sort((m1, m2) {
+    if (m1.role.compareTo(m2.role) != 0) {
       return m1.role.compareTo(m2.role);
-    }else {
+    } else {
       return m1.age.compareTo(m2.age);
     }
   });
 
-  men.forEach((el) => {
-    print(el.role + ' - ' + el.age.toString())
-  });
-
+  men.forEach((el) => {print(el.role + ' - ' + el.age.toString())});
 }
