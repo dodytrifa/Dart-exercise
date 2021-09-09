@@ -4,7 +4,13 @@ class Human {
   Human(this.deposit);
 
   Human operator +(var other) {
-    return Human(deposit + other.deposit);
+    if (other is Human) {
+      return Human(deposit + other.deposit);
+    } else if (other is int) {
+      return Human(deposit + other);
+    } else {
+      return this;
+    }
   }
 
   @override
@@ -14,6 +20,7 @@ class Human {
         return true;
       }
     }
+    return false;
   }
 }
 
