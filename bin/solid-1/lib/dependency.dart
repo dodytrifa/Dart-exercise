@@ -16,12 +16,16 @@ class UserManager {
 
 //!----------------------------------
 
+//?------------------------------------------------
+//? BETTER PRACTICE
+
 class UserSample {
   //*related things
 }
 
+//* di bawah ini High level module
 class UserManagerSample {
-  final IDataStorage datastorage;
+  final InterfaceDataStorage datastorage;
 
   UserManagerSample(this.datastorage);
 
@@ -29,7 +33,26 @@ class UserManagerSample {
     datastorage.saveData(user);
   }
 }
+//* HLM di atas bergantung pada abstraction
 
-abstract class IDataStorage {
+//*abstraction
+abstract class InterfaceDataStorage {
   void saveData(User user);
+}
+
+//*Low Level Module, juga bergantung pada abstraction
+class CloudStorage implements InterfaceDataStorage {
+  @override
+  void saveData(User user) {
+    //*connect cloud etc
+    //*save data
+  }
+}
+
+class LocalStroage implements InterfaceDataStorage {
+  @override
+  void saveData(User user) {
+    //*connect to localstorage
+    //*savedata
+  }
 }

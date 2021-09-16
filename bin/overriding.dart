@@ -35,5 +35,5 @@ void main(List<String> arguments) {
   print(a + b); //* hasil 30
   print(a1 + b1); //* hasil hello World
   print((a2 + b2).deposit);
-  print(a == b); //* hasil akan false karena mrefer ke objek berbeda
+  print(a == b); //* hasil akan false karena merefer ke objek berbeda
 }
