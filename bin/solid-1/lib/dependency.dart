@@ -49,7 +49,7 @@ class CloudStorage implements InterfaceDataStorage {
   }
 }
 
-class LocalStroage implements InterfaceDataStorage {
+class LocalStorage implements InterfaceDataStorage {
   @override
   void saveData(User user) {
     //*connect to localstorage
